@@ -1,0 +1,8 @@
+{
+  "id": "velocity-ping-fix",
+  "name": "Velocity Ping Fix",
+  "version": "${version}",
+  "main": "dev.ua.leavepulse.pingfix.PingFixPlugin",
+  "description": "Fixes force-host ping passthrough showing wrong player count when backend is offline.",
+  "authors": ["LeavePulse"]
+}
