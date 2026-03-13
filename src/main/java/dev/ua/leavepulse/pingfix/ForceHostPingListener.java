@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 
 import java.net.InetSocketAddress;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 
@@ -42,7 +43,7 @@ public class ForceHostPingListener {
             return null;
         }
 
-        String hostname = virtualHost.getHostString().toLowerCase();
+        String hostname = virtualHost.getHostString().toLowerCase(Locale.ROOT);
 
         Map<String, List<String>> forcedHosts = proxy.getConfiguration().getForcedHosts();
         List<String> serverNames = forcedHosts.get(hostname);
