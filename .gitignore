@@ -60,5 +60,5 @@ Thumbs.db
 *.rar
 
 # Application specific
+*.local.*
 velocity-ping-fix-*.jar
-
