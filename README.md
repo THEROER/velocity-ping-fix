@@ -8,7 +8,7 @@ they point to is offline.
 
 With Velocity's ping passthrough, a forced host (e.g. `smp.example.com` →
 `survival` backend) can end up showing the proxy's *global* player count even
-when its backend server is actually down — making an offline server look online
+when its backend server is actually down, making an offline server look online
 and populated.
 
 ## What it does
@@ -23,7 +23,7 @@ On every `ProxyPingEvent`, the plugin:
 4. If the backend is **unreachable**, it rewrites the response to show
    **0 online players** instead of the proxy's global count.
 
-No configuration required — it reads Velocity's existing forced-host mapping.
+No configuration required; it reads Velocity's existing forced-host mapping.
 
 ## Requirements
 
